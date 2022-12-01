@@ -1,5 +1,5 @@
 # Advent of Code
-> https://advent-of-code.com
+> https://adventofcode.com
 
 This repository holds my solutions to all of the Advent-Of-Code problem I solved.
 
