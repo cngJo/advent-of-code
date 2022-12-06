@@ -1,0 +1,32 @@
+#!/usr/bin/env sh
+
+# PROJECT_ROOT is the absolute path to the project root path.
+PROJECT_ROOT="$(realpath "$(dirname "$(realpath "$0")")"/..)"
+
+_main() {
+    local year="$1"
+    local day="$2"
+    local language="$3"
+
+    local template_directory="$PROJECT_ROOT/templates/${language}"
+
+    if [ ! -d $template_directory ]; then
+        echo "[ERROR] No template for language ${language} found!"
+        exit 1;
+    fi;
+
+    local day_directory="$PROJECT_ROOT/${year}/${day}"
+    local solution_directory="${day_directory}/${language}"
+
+    if [ -d $solution_directory ]; then
+        echo "[ERROR] Day ${day} of year ${year} already has a solution in ${language}"
+        exit 1;
+    fi;
+
+    mkdir -p $solution_directory
+    rsync -r "$template_directory" "$day_directory"
+
+    echo "Created day ${day} in year ${year} in ${language}"
+}
+
+_main "$@"

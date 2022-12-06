@@ -38,6 +38,18 @@ php 1.php
 php 1.php example.txt
 ```
 
+## Templates
+
+This repository provides templates for all commonly used languages and simple tooling to generate new solutions from templates.
+
+Those templates are located in the `templates/` directory where the directory name is the name of the template.
+
+You can use the `bin/use-template` script to generate a new solution.
+
+```bash
+bin/use-template <year> <day> <template-name>
+```
+
 <div align=center>
     <span>&copy; 2022-2022, <a href="mailto:johannes@przymusinski.de">Johannes Przymusinski</a></span>
 </div>
