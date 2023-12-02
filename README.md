@@ -51,5 +51,5 @@ bin/use-template <year> <day> <template-name>
 ```
 
 <div align=center>
-    <span>&copy; 2022-2022, <a href="mailto:johannes@przymusinski.de">Johannes Przymusinski</a></span>
+    <span>&copy; 2022-2023, <a href="mailto:johannes@przymusinski.de">Johannes Przymusinski</a></span>
 </div>
