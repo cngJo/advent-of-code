@@ -3,11 +3,11 @@
 ## Part 1
 
 ```shell
-php 1.php
+node 1.js
 ```
 
 ## Part 2
 
 ```shell
-php 2.php
+node 2.js
 ```
